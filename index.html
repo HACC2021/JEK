@@ -10,15 +10,18 @@
 </head>
 
 <body>
-  <form action="/survey_responses">
+<form action="/survey_responses">
+        <label for="phone" class="title1">Enter a phone number:</label><br><br>
+      <input type="tel" id="phone" name="phone" placeholder="808-123-4567" required>
+   <br><br>
        <label class="title1">Date and Time of sighting</label>
    <br><br>
         <label for="datetime"></label>
-  		<input type="datetime-local" id="datetime" name="datetime">
+  		<input type="datetime-local" id="datetime" name="datetime" required>
    <br><br>
        <label for="animals">Choose an animal:</label>
 
-       <select name="animals" id="animals">
+       <select name="animals" id="animals" required>
          <option value="Hawaiian Monk Seal">Hawaiian Monk Seal(s)</option>
          <option value="Sea Turtles">Sea Turtle(s)</option>
          <option value="Seabirds">Seabird(s)</option>
