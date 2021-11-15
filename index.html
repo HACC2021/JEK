@@ -1,44 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 		
-<!--Links to the CSS and Bootstrap used-->
 <head>
-  <meta charset="utf-8">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="stylesheet" href="CSS/formstyle.css">
-<title>HMAR Sighting & Reporting form</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<title>HMAR Sighting & Reporting Form</title>
 </head>
 
-<body>
-<form action="/survey_responses">
-        <label for="phone" class="title1">Enter a phone number:</label><br><br>
-      <input type="tel" id="phone" name="phone" placeholder="808-123-4567" required>
-   <br><br>
-       <label class="title1">Date and Time of sighting</label>
-   <br><br>
-        <label for="datetime"></label>
-  		<input type="datetime-local" id="datetime" name="datetime" required>
-   <br><br>
-       <label for="animals">Choose an animal:</label>
+  <form action="reportings" class="formpage">
 
-       <select name="animals" id="animals" required>
-         <option value="Hawaiian Monk Seal">Hawaiian Monk Seal(s)</option>
-         <option value="Sea Turtles">Sea Turtle(s)</option>
-         <option value="Seabirds">Seabird(s)</option>
-         <option value="Spinner Dolphins">Spinner Dolphin(s)</option>
-         <option value="Humpback Whales">Humpback Whale(s)</option>
-       </select>
+   <label for="firstname" class="required" required>First name:</label>
+   <br>
+   <input type="text" id="firstname" name="firstname">
+
    <br><br>
-       <label for="sighting" class="title1">Where did you see the animal?</label><br>
-       <textarea id="sighting" name="sighting" cols="50">
-       </textarea>
+
+   <label for="lastname" class="required" required>Last name:</label>
+   <br>
+   <input type="text" id="lastname" name="lastname">
+
    <br><br>
-       <label for="distress" class="title1">Are they in distress?</label><br>
-       <textarea id="distress" name="distress" cols="50">
-       </textarea>
+
+   <label for="phone" class="required">Enter your phone number:</label>
+   <br>
+   <input type="tel" id="phone" name="phone" placeholder="808-123-4567" required>
+
    <br><br>
-       <input type="submit" value="Submit">
+
+   <label class="required" for="datetime">Date and Time of sighting</label>
+   <br>
+   <input type="datetime-local" id="datetime" name="datetime" required>
+
+   <br><br>
+
+   <label for="animals" class="required" required>Choose an animal:</label>
+
+    <select name="animals" id="animals">
+      <option value="Hawaiian Monk Seal">Hawaiian Monk Seal(s)</option>
+      <option value="Sea Turtles">Sea Turtle(s)</option>
+      <option value="Seabirds">Seabird(s)</option>
+      <option value="Spinner Dolphins">Spinner Dolphin(s)</option>
+      <option value="Humpback Whales">Humpback Whale(s)</option>
+    </select>
+
+   <br><br>
+
+   <form action="/action_page.php">
+   <label for="Where" class="required" required>Where did you see the animal?</label>
+   <br>
+   <input type="text" id="Where" name="Where">
+  
+   <br><br>
+  
+   <label for="Where" class="required" required>Is the animal in distress?</label>
+   <br>
+   <input type="text" id="Where" name="Where">
+
+   <br><br>
+
+   <input type="submit" value="Submit">
+
 </form>
 
-</body>
 </html>
+</body>
