@@ -1,0 +1,17 @@
+.formpage {
+    text-align: center;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 3vw;
+    padding: 0px;
+    margin: 0px;
+
+}
+label {
+	background-color: #0973ba;
+	width: 100%;
+	color: white;
+}
+.required:after {
+    content:" *";
+    color: red;
+}
