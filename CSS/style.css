@@ -19,3 +19,10 @@ label {
     content:" *";
     color: red;
 }
+
+
+/* CSS for frontpage */
+
+.background {
+	background-image: url(https://sites.google.com/site/hawaiianmonkseal0/_/rsrc/1401219255596/survival-adaptations/reef.jpg);
+}
