@@ -1,4 +1,31 @@
+/* CSS for front page*/
+.frontpage {
+	text-align: center;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 2.5vw;
+	padding: 0px;
+	margin: 0px;
+}
 
+.header {
+	background-color: #0973ba;
+	width: 100%;
+	color: white;
+}
+
+.link {
+	background-color: #0973ba;
+	width: 100%;
+	color: white;
+}
+
+a{
+    font-weight: bold;
+    color: #67e6a6; 
+}
+a:hover {
+    color: #f2b346;
+}
 
 /* CSS for form */
 
@@ -18,11 +45,4 @@ label {
 .required:after {
     content:" *";
     color: red;
-}
-
-
-/* CSS for frontpage */
-
-.background {
-	background-image: url(https://sites.google.com/site/hawaiianmonkseal0/_/rsrc/1401219255596/survival-adaptations/reef.jpg);
 }
